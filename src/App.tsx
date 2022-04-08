@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {FC} from 'react';
 import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import { Dragon } from "./components/dragon/component"
+import { Rocket } from "./components/rocket/component"
+import { Home } from './views/Home/component';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+export const App: FC = () =>{
+  return(
+    <>
+      <header>
+          <img src={"./logo.jpg"}/>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="dragon">Dragon</Link>
+          <Link to="rocket">Rocket</Link>
+        </nav>
       </header>
-    </div>
-  );
+      <article>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="dragon" element={<Dragon />} />
+          <Route path="rocket" element={<Rocket />} />
+        </Routes>
+      </article>
+    </>
+  )
 }
 
-export default App;
