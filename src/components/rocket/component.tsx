@@ -18,7 +18,7 @@ export const Rocket: FC = () =>{
     <div>
       {rocket !== undefined ? (<div>
         {rocket.map((rocket: any, index: number) => (
-          <RocketDisplay key={`rocket-${rocket.id}-index-${index}`} rocket={rocket}/>
+          <RocketDisplay key={`rocket-${rocket.id}-index-${index}`} rocket={rocket} index={index}/>
         ))}
       </div>) : null}
     </div>

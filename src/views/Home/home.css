@@ -1,0 +1,42 @@
+.App-container{
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../../public/background.jpg");
+}
+
+.App-container .company-info{
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.App-container .company-info .company-name{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 90px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.App-container .company-info .company-name .ceo{
+  font-size: 25px;
+}
+
+.App-container .company-info .company-des{
+  color: #fff;
+  width: 500px;
+}
+
+.App-container .extra-info{
+  position: absolute;
+  bottom: 20px;
+  right: 90px;
+}
+
+.App-container .extra-info .extra-state, .extra-founded{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 16px;
+  text-align: right;
+  color: #fff;
+}
