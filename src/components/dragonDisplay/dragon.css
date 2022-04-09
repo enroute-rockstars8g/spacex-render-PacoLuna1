@@ -1,0 +1,63 @@
+.dragons-container{
+  display: flex;
+  height: 902px;
+}
+
+.dragons-container .drag-container{
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.dragons-container .drag-container .info-left{
+  right: 100px;
+}
+
+.dragons-container .drag-container .info-right{
+  left: 100px;
+}
+
+.dragons-container .drag-container .drag-image{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.dragons-container .drag-container .drag-info{
+  border: 1px solid #fff;
+  position: absolute;
+  width: 55%;
+  height: 550px;
+  bottom: 100px;
+  padding: 0 10px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dragons-container .drag-container .drag-info:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dragons-container .drag-container .drag-info .drag-name{
+    font-size: 30px;
+    text-align: center;
+}
+
+.dragons-container .drag-container .drag-info .thruster-list{
+  color: #fff;
+  list-style: none;
+  padding-left: 20px;
+}
+
+@media (max-width: 1500px) {
+  .dragons-container{
+    flex-direction: column;
+    height: 1300px;
+  }
+
+  .dragons-container .drag-container{
+    width: 100%;
+  }
+}

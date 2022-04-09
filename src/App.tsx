@@ -9,14 +9,14 @@ export const App: FC = () =>{
   return(
     <>
       <header>
-          <img src={"./logo.jpg"}/>
+          <Link to="/"><img className="logo" src={"./logo.jpg"} alt="logo"/></Link>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="dragon">Dragon</Link>
-          <Link to="rocket">Rocket</Link>
+          <Link className="link" to="/">Home</Link>
+          <Link className="link" to="dragon">Dragon</Link>
+          <Link className="link" to="rocket">Rocket</Link>
         </nav>
       </header>
-      <article>
+      <article className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="dragon" element={<Dragon />} />

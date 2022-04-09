@@ -1,0 +1,43 @@
+.rocket-container{
+  position: relative;
+  height: 800px;
+  width: 100%;
+}
+
+.rocket-container .rocket-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.rocket-container .rocket-info{
+  position: absolute;
+  bottom: 100px;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #fff;
+  bottom: 100px;
+}
+
+.rocket-container .info-right{
+  right: 200px;
+}
+
+.rocket-container .info-left{
+  left: 200px;
+}
+
+.rocket-info .rocket-name{
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.rocket-info .rocket-name, .rocket-description{
+  color: #fff;
+}
+
+.rocket-info .rocket-description{
+  text-align: justify;
+}
